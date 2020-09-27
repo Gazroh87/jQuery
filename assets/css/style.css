@@ -1,46 +1,76 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 body {
-    background-color: #ddd;
+  background-color: #ddd;
 }
 
 nav ul li p {
-    font-family: arial;
-    font-size: 12px;
-    text-decoration: none;
-    color: #cc181e;
-    padding-bottom: 10px;
+  font-family: arial;
+  font-size: 12px;
+  text-decoration: none;
+  color: #cc181e;
+  padding-bottom: 10px;
 }
 
 header {
-    width: 100%;
-    height: 50px;
-    background-color: #fff;
-    z-index: 1000;
-    border-bottom: 1px solid #e6e6e6;
-    position: fixed;
-    top: 0px;
+  width: 100%;
+  height: 50px;
+  background-color: #fff;
+  z-index: 1000;
+  border-bottom: 1px solid #e6e6e6;
+  position: fixed;
+  top: 0px;
 }
 
 header i {
-    width: 16px;
-    padding: 17px;
-    margin-left: 20px;
-    cursor: pointer;
-    opacity: 0.2;
+  width: 16px;
+  padding: 17px;
+  margin-left: 20px;
+  cursor: pointer;
+  opacity: 0.2;
 }
 
 header i:hover {
-    opacity: 0.6;
+  opacity: 0.6;
 }
 
 nav {
-    width: 240px;
-    height: 100vh;
-    background-color: #fff;
-    display: none;
+  width: 240px;
+  height: 100vh;
+  background-color: #fff;
+  /* display: none; (nav to start off hidden) */
 }
 
 nav ul:first-child {
-    width: 80%;
-    padding: 70px 0 10px;
+  width: 80%;
+  padding: 70px 0 10px;
+}
 
+.content-box {
+  width: 240px;
+  height: 60px;
+  border-radius: 6px;
+  background-color: blue;
+  padding: 20px;
+}
+
+.content-before {
+  font-size: 22px;
+  font-family: arial;
+  color: #fff;
+  text-align: center;
+  line-height: 60px;
+}
+
+.content-after {
+  display: none;
+  font-size: 14px;
+  font-family: arial;
+  color: #fff;
+  text-align: left;
+  line-height: 16px;
+  opacity: 0;
 }
